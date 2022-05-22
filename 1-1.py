@@ -12,6 +12,7 @@ print(a*b)
 a=7
 b=6
 c=a%b
+c=a+b
 print(c)
 import matplotlib.pyplot as plt
 import numpy as np

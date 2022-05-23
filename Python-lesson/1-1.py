@@ -39,3 +39,10 @@ y = [2, 5, 3, 0, 10, 9]
 
 plt.plot(x, y)
 plt.show()
+
+print("ユークリッドの互除法をしたい二つの数字を入力")
+a=input("a:")
+b=input("b:")
+#aをbで割った余り5を出す
+q, mod = divmod(a, b)
+print(q, mod)

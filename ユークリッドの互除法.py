@@ -1,4 +1,4 @@
-#出力する関数作成
+#出力する関数作成したかった
 
 print("ユークリッドの互除法をしたい二つの数字を入力")
 a=int(input("a:"))
@@ -10,6 +10,7 @@ c=int(result[0])
 d=int(result[1])
 #sequence=[a,b,c,d]
 print(str(a)+"="+str(b)+"*"+str(c)+"+"+str(d))
+# 繰り返す
 while d != 0:
     a=b
     b=d 

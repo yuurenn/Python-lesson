@@ -30,8 +30,10 @@ while d != 0:
     b_list.append(str(b))
     c_list.append(str(c))
     d_list.append(str(d))
+    i=i+1
 print(a_list)
 print(b_list)
 print(c_list)
 print(d_list)
+print(i)
 print("最大公約数",b)

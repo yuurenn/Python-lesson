@@ -7,6 +7,7 @@ d_list=[]
 print("ユークリッドの互除法をしたい二つの数字を入力")
 a=int(input("a:"))
 b=int(input("b:"))
+j=a#一次不定方程式で利用
 i=0
 result = divmod(a, b)
 # print(result[0], result[1])
@@ -37,3 +38,7 @@ print(c_list)
 print(d_list)
 print(i)
 print("最大公約数",b)
+# 一次不定方程式
+while i==0:
+    print(str(d_list[i])+"="+str(a_list[i])+"-"+str(b_list[i])+"+"+str(c_list[i]))
+    i=i-1

@@ -39,6 +39,11 @@ print(d_list)
 print(i)
 print("最大公約数",b)
 # 一次不定方程式
-while i==0:
-    print(str(d_list[i])+"="+str(a_list[i])+"-"+str(b_list[i])+"+"+str(c_list[i]))
+i=i-1
+while i!=-1:
+    print(str(d_list[i])+"="+str(a_list[i])+"-"+str(b_list[i])+"*"+str(c_list[i]))
     i=i-1
+
+i=i-1
+print(str(d_list[i])+"="+str(a_list[i])+"-"+str(b_list[i])+"*"+str(c_list[i]))
+print(str(d_list[i])+"="+str(a_list[i])+"-("+str(a_list[i-1])+"-"+str(b_list[i-1])+"*"+str(c_list[i-1])+")*"+str(c_list[i]))

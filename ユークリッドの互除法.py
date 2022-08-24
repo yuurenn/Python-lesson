@@ -2,7 +2,6 @@
 
 from math import gcd
 
-from numpy import c_
 
 
 a_list=[]
@@ -73,16 +72,14 @@ i=i-1
 kx=1
 ky=0
 # print(str(d_list[i])+"="+str(a_list[i])+"-("+str(a_list[i-1])+"-"+str(b_list[i-1])+"*"+str(c_list[i-1])+")*"+str(c_list[i]))
-print(str(d_list[i])+"="+str(kx)+"*"+str(a_list[i])+"+"+str(-c_list[i])+"*"+str(c_list[i+1]))
-kx= -c_list[i]
-
+print(str(d_list[i])+"="+str(a_list[i])+"*"+str(kx)+"-"+str(b_list[i])+"*"+str(c_list[i]))
+# kx= -c_list[i]
+ky=c_list[i]
 while i!=0:
-    i=0
-    # i-=1
-    # ky=c_list[i-1]*c_list[i]+1
-    # # kx+c_list[i]*(-ky)
-    # kx= ky+c_list[i]
-    # # i
-    # print(" ="+str(kx)+"*"+str(a_list[i])+"+"+str(ky)+"*"+str(b_list[i]))
+    kx=c_list[i-1]*c_list[i]+kx
+    print(" ="+str(a_list[i])+"*"+str(kx)+"-"+str(a_list[i-1])+"*"+str(ky))
+    ky=c_list[i]*kx+ky
+    i-=1
+    # print(" ="+str(a_list[i-1])+"*"+str(kx)+"-"+str(a_list[i-1])+"*"+str(ky))
     
 
